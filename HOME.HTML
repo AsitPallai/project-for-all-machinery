@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circular Equipment Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .circle-container {
+      left: 30%;
+      position: relative;
+      width: 600px;
+      height: 600px;
+    }
+
+    .center-button {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .center-button:hover {
+      background-color: #0056b3;
+    }
+
+    .branch {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.8s ease, opacity 0.8s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .branch.show {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  </style>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <div class="circle-container">
+    <div class="center-button" onclick="toggleBranches()">ALL</div>
+    <div class="branch">EXCAVATOR</div>
+    <div class="branch">MOTOR GRADER</div>
+    <div class="branch">WHEEL LOADER</div>
+    <div class="branch">BACKHOE LOADER</div>
+    <div class="branch">PAVER</div>
+    <div class="branch">SOIL COMPACTOR</div>
+    <div class="branch">TANDEM ROLLER</div>
+    <div class="branch">BABY ROLLER</div>
+    <div class="branch">DUMPER</div>
+    <div class="branch">BOOM PLACER</div>
+    <div class="branch">LMV</div>
+    <!-- 👇 Make RMC a link to the second page -->
+    <a href="rmc.html" class="branch">RMC</a>
+  </div>
+
+  <script>
+    const center = { x: 300, y: 300 };
+    const radius = 220;
+    const branches = document.querySelectorAll('.branch');
+    const total = branches.length;
+
+    branches.forEach((branch, i) => {
+      const angle = (i / total) * (2 * Math.PI);
+      const x = center.x + radius * Math.cos(angle);
+      const y = center.y + radius * Math.sin(angle);
+      branch.style.left = `${x}px`;
+      branch.style.top = `${y}px`;
+    });
+
+    function toggleBranches() {
+      branches.forEach(branch => branch.classList.toggle('show'));
+    }
+  </script>
+
+</body>
+</html>
+
+
