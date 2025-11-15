@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CAT 120K2 Motor Grader — Overview & Hydraulic Guide</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff8c00;--muted:#96a2b6;--glass:rgba(255,255,255,0.03)}
+    body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:#ffffff;color:#000000;margin:0;padding:24px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    header h1{font-size:28px;margin:0}
+    nav{background:var(--glass);padding:14px;border-radius:12px;display:flex;gap:8px;flex-wrap:wrap}
+    a.navlink{color:var(--accent);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
+    .container{display:grid;grid-template-columns:1fr 360px;gap:20px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    section{margin-bottom:18px}
+    h2{color:#fff;margin:0 0 8px 0}
+    p{color:var(--muted);line-height:1.5;margin:0 0 8px 0}
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{padding:8px;text-align:left;border-bottom:1px dashed rgba(255,255,255,0.04)}
+    th{color:#cbd6e6;font-weight:700}
+    .faq dt{font-weight:700;color:#fff;margin-top:10px}
+    .faq dd{margin:6px 0 12px 0;color:var(--muted)}
+    .issues li{margin:6px 0}
+    .badge{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;color:var(--muted);font-size:13px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    @media(max-width:980px){.container{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;flex-direction:column">
+      <h1>CAT 120K2 Motor Grader — Brief Overview & Complete Hydraulic Guide</h1>
+      <!-- <span class="badge">HTML document • Section-wise • Hydraulic Q&amp;A & Troubleshooting</span> -->
+    </div>
+  </header>
+
+  <nav class="card" aria-label="page navigation">
+    <a class="navlink" href="#overview">Overview</a>
+    <a class="navlink" href="#purpose">Purpose</a>
+    <a class="navlink" href="#specs">Key Specs</a>
+    <a class="navlink" href="#hydraulics">Hydraulic System</a>
+    <a class="navlink" href="#faq">Hydraulic Q&amp;A</a>
+    <a class="navlink" href="#issues">Common Issues & Fixes</a>
+  </nav>
+
+  <main class="container">
+    <div>
+      <section id="overview" class="card">
+        <h2>Overview</h2>
+        <p>The <strong>Caterpillar 120K2</strong> is a mid-size motor grader built for precise road grading, finishing, ditching, snow removal and general site preparation. It balances stable frame design, operator comfort and a hydraulic system tuned for responsive blade control and attachment operation.</p>
+      </section>
+
+      <section id="purpose" class="card">
+        <h2>Primary Purposes & Typical Uses</h2>
+        <p>Motor graders like the CAT 120K2 are used for:</p>
+        <ul>
+          <li>Road leveling and profiling prior to paving</li>
+          <li>Fine grading and surface finishing</li>
+          <li>Spreading and shaping base materials (gravel, GSB)</li>
+          <li>Ditch cutting, slope creation and shoulder work</li>
+          <li>Snow removal and clearing in winter operations</li>
+        </ul>
+      </section>
+
+      <section id="specs" class="card">
+        <h2>Key Specifications (typical ranges)</h2>
+        <table>
+          <tr><th>Item</th><th>Value (typical)</th></tr>
+          <tr><td>Engine</td><td>Cat C7 ACERT (mid-power class)</td></tr>
+          <tr><td>Gross Power</td><td>~128–145 HP</td></tr>
+          <tr><td>Operating Weight</td><td>~14,000–15,000 kg</td></tr>
+          <tr><td>Moldboard (blade) length</td><td>~12 ft (3.7 m)</td></tr>
+          <tr><td>Maximum Cutting Depth</td><td>~750 mm (model-dependent)</td></tr>
+          <tr><td>Turning Radius</td><td>~7.0–7.5 m</td></tr>
+        </table>
+        <p><em>Note:</em> Exact values may vary by configuration, optional equipment and regional build. Always refer to the machine's data plate or official Caterpillar documentation for serial-number-specific values.</p>
+      </section>
+
+      <section id="hydraulics" class="card">
+        <h2>Hydraulic System — Detailed Description</h2>
+        <p>The 120K2 uses a load-sensing, pressure-compensated hydraulic system to give smooth, efficient, and predictable implement motion. The hydraulic architecture includes:</p>
+        <ul>
+          <li><strong>Main hydraulic pump(s):</strong> usually axial piston variable-displacement pumps (single or paired depending on option)</li>
+          <li><strong>Pilot system:</strong> low-flow pilot circuit to operate control valves and joysticks</li>
+          <li><strong>Main control valve (spool valve):</strong> distributes flow to blade, circle, articulation, ripper (if fitted) and steering systems</li>
+          <li><strong>Hydraulic reservoir:</strong> sized with breathers and return filters</li>
+          <li><strong>Filtration:</strong> return-line and pressure-line filtration, typically with 10–25 micron elements for return and 2–5 micron for suction/pressure depending on design</li>
+        </ul>
+
+        <h3>Hydraulic Pump Make — Common Suppliers</h3>
+        <p>Pump make for heavy equipment varies by OEM sourcing and regional configuration. For the CAT 120K2 you may encounter pumps supplied by:</p>
+        <ul>
+          <li><strong>Caterpillar (OEM-branded units)</strong> — in many cases Cat sources or brands the pump assembly</li>
+          <li><strong>Parker Hannifin</strong> — widely used axial piston and gear pumps in construction equipment</li>
+          <li><strong>Bosch Rexroth</strong> — axial piston pumps and control-valve subsystems</li>
+          <li><strong>Kawasaki</strong> — popular supplier of high-displacement pumps and motors</li>
+          <li><strong>Other reputable suppliers</strong> — e.g., Sundstrand (now part of Sauer-Danfoss), Denison, and regional manufacturers</li>
+        </ul>
+        <p><em>Tip:</em> The exact pump brand and part number are stamped on the pump housing or listed in the machine parts manual. When ordering spare pumps or parts, always use the serial number and part numbers from the machine.</p>
+
+        <h3>Hydraulic Pressures & Typical Ranges</h3>
+        <table>
+          <tr><th>Circuit</th><th>Typical Pressure Range</th></tr>
+          <tr><td>Main implement / work circuits</td><td>~2,500–3,500 psi (170–240 bar)</td></tr>
+          <tr><td>Steering circuit</td><td>~2,000–3,000 psi (140–210 bar)</td></tr>
+          <tr><td>Swing / circle drive</td><td>~2,800–3,600 psi (190–250 bar)</td></tr>
+          <tr><td>Track/drive motors (if hydrostatic drive)</td><td>Varies widely — refer to specific drive specs</td></tr>
+          <tr><td>Pilot circuit pressure</td><td>~200–350 psi (14–24 bar)</td></tr>
+        </table>
+        <p><em>Important:</em> These ranges are indicative. For machine-specific pressures consult the service manual or the hydraulic schematic supplied with your grader.</p>
+      </section>
+
+      <section id="faq" class="card">
+        <h2>Hydraulic Q&amp;A (Common Questions & Short Answers)</h2>
+        <dl class="faq">
+          <dt>Q: How do I identify the hydraulic pump model on my machine?</dt>
+          <dd>A: Look for the manufacturer’s tag on the pump housing; note the part number, serial number and model. Cross-check with the machine parts manual or the dealer.</dd>
+
+          <dt>Q: What hydraulic oil viscosity should I use?</dt>
+          <dd>A: Use the viscosity grade specified in the operator's manual — typically an ISO VG 46 or 68 hydraulic oil for medium-to-heavy duty climates. For very cold conditions choose lower-viscosity fluids recommended by Cat (ISO VG 32 or winter-grade blends) and for hot climates use higher-viscosity or synthetics as specified.</dd>
+
+          <dt>Q: How often should I change hydraulic filters and oil?</dt>
+          <dd>A: Replace return-line filters per service schedule (commonly every 500 hours) and conduct hydraulic oil sampling at scheduled intervals. Full oil changes are usually recommended at major service intervals or if contamination is detected.</dd>
+
+          <dt>Q: What are safe hydraulic system start-up steps after maintenance?</dt>
+          <dd>A: Fill reservoir to the correct level, prime pumps if required, cycle controls to purge air, warm the machine to operating temperature, check for leaks, and verify correct pressures with gauges before full-load operation.</dd>
+
+          <dt>Q: Can I replace a failed pump with a compatible third‑party unit?</dt>
+          <dd>A: Yes if the replacement matches displacement, mounting, shaft, and pressure ratings. Use OEM or high-quality aftermarket pumps and confirm compatibility with the dealer to avoid control or warranty issues.</dd>
+        </dl>
+      </section>
+
+      <section id="issues" class="card">
+        <h2>Common Hydraulic Issues, Causes & Fixes</h2>
+        <p>The list below covers common symptoms, probable causes and recommended corrective actions.</p>
+        <ul class="issues">
+          <li><strong>Symptom:</strong> Slow or weak implement response
+            <ul>
+              <li>Causes: Low pump flow, clogged filters, air in system, worn pump</li>
+              <li>Fixes: Check fluid level and temperature, replace filters, bleed pilot lines, measure pump flow, inspect for internal wear and replace pump if required</li>
+            </ul>
+          </li>
+
+          <li><strong>Symptom:</strong> Excessive heat in hydraulic oil
+            <ul>
+              <li>Causes: Overworked pump, blocked cooler, low oil level, incorrect oil viscosity</li>
+              <li>Fixes: Clean cooler cores, verify fan/cooler operation, check oil level and viscosity, reduce duty cycle until resolved</li>
+            </ul>
+          </li>
+
+          <li><strong>Symptom:</strong> Jerky or erratic movements
+            <ul>
+              <li>Causes: Contaminated oil, worn control valve spools, sticking pilot valves</li>
+              <li>Fixes: Sample and analyze oil, flush system if contaminated, rebuild/replace control valve, inspect pilot devices</li>
+            </ul>
+          </li>
+
+          <li><strong>Symptom:</strong> High pressure relief or frequent relief-valve popping
+            <ul>
+              <li>Causes: Obstruction downstream, wrong pressure setting, overloaded implement</li>
+              <li>Fixes: Inspect lines and cylinders for blockage, check/adjust relief valve settings to spec, avoid overloading the implement</li>
+            </ul>
+          </li>
+
+          <li><strong>Symptom:</strong> External leaks at fittings or seals
+            <ul>
+              <li>Causes: Loose fittings, damaged hoses, degraded O-rings</li>
+              <li>Fixes: Tighten fittings to specified torque, replace damaged hoses and seals, use correct hose assemblies with proper pressure rating</li>
+            </ul>
+          </li>
+        </ul>
+
+        <p><strong>Safety note:</strong> Always depressurize hydraulic circuits and follow lockout/tagout procedures before repairing. Use correct personal protective equipment and consult the service manual for torque and procedural data.</p>
+      </section>
+
+      <footer class="card">
+        <p>Prepared as a concise HTML reference for the CAT 120K2 motor grader focusing on hydraulics, common troubleshooting and practical Q&amp;A. For machine-specific service, consult the official Caterpillar publications or authorized dealer.</p>
+      </footer>
+    </div>
+
+    <aside>
+      <section class="card">
+        <h2>Quick Reference</h2>
+        <p class="muted">Hydraulic quick-values (indicative)</p>
+        <table>
+          <tr><th>Parameter</th><th>Value</th></tr>
+          <tr><td>Main implement pressure</td><td>~2,500–3,500 psi</td></tr>
+          <tr><td>Pilot pressure</td><td>~200–350 psi</td></tr>
+          <tr><td>Common pump types</td><td>Axial piston variable</td></tr>
+          <tr><td>Typical oil</td><td>ISO VG 46 / 68 (model & climate dependent)</td></tr>
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>When to call dealer</h2>
+        <ul>
+          <li>Repeated unexplained pressure spikes</li>
+          <li>Major internal pump failure (metal in fluid)</li>
+          <li>Control valve catastrophic failure or machine immobilized</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Useful Actions</h2>
+        <ol>
+          <li>Keep a maintenance log with hydraulic oil analysis results</li>
+          <li>Record hydraulic pressures at standard test points monthly</li>
+          <li>Use OEM part numbers for seals and hoses</li>
+        </ol>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>
