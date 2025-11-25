@@ -24,6 +24,14 @@
       padding: 20px;
       border-radius: 10px
     }
+    .card {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 18px;
+      border: 1px solid #e9e9e9;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03)
+    }
 
     h1 {
       font-size: 28px;
@@ -236,6 +244,64 @@
           </tr>
         </tbody>
       </table>
+      <div class="card">
+        <h1>ACE FX 230 — Hydraulic Pump & Motor (Summary)</h1>
+
+        <h2>Published / confirmed items</h2>
+        <ul>
+          <li><strong>Hydraulic system type:</strong> Gear / vane type hydraulic pump; control valve with built-in
+            pressure relief valve. </li>
+          <li><strong>Main pump (reported):</strong> Vane type main pump is mentioned in FX230 spec documents (public
+            uploads). </li>
+          <li><strong>Max hydraulic system pressure:</strong> <strong>20 MPa (200 bar)</strong>. </li>
+          <li><strong>Max oil flow (reported):</strong> <strong>50 L/min</strong>. </li>
+          <li><strong>Hoist drive:</strong> Hoist/winch is driven by a hydraulic motor (winch motor). (Public specs
+            reference hydraulic hoist/motor). </li>
+        </ul>
+
+        <h2>Typical interpretation / guidance</h2>
+        <ul>
+          <li>The published pressure (20 MPa) is the manufacturer's stated maximum system pressure — convert:
+            <strong>20 MPa = 200 bar</strong>.
+          </li>
+          <li>“Gear / Vane” indicates the OEM may fit a vane (or gear) style main pump depending on batch / variant;
+            vane pumps are common as main pumps on pick-and-carry cranes for smooth control and decent pressure
+            capability. </li>
+          <li>The hydraulic motor for the winch will be sized to operate reliably at the same system pressure (i.e.,
+            rated for ~200 bar working pressure) — service manuals / schematics normally list the motor displacement
+            and exact make/model. </li>
+        </ul>
+
+        <h2>Quick table (handy reference)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Value / Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>System maximum pressure</td>
+              <td>20 MPa (200 bar).</td>
+            </tr>
+            <tr>
+              <td>Max hydraulic flow</td>
+              <td>50 L/min (reported). </td>
+            </tr>
+            <tr>
+              <td>Main pump type (public)</td>
+              <td>Gear / Vane type (control valve with relief). </td>
+            </tr>
+            <tr>
+              <td>Winch drive</td>
+              <td>Hydraulic motor (no public model number). </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
 
       <footer>
         <!-- <p>Note: Values are indicative and based on typical ACE FX 230 specifications. For exact details, always refer to the manufacturer's official manual or contact the dealer.</p> -->
