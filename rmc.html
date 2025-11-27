@@ -14,6 +14,21 @@
             line-height: 1.6;
         }
 
+        header {
+            background: #003366;
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         h1,
         h2,
         h3 {
@@ -42,141 +57,320 @@
             color: #006699;
             margin-top: 15px;
         }
-        #back-btn {
-      display: inline-block;
-      margin-bottom: 20px;
-      padding: 10px 18px;
-      background: #007BFF;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
 
-    #back-btn:hover { background-color: #0056b3; }
+        #back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 18px;
+            background: #007BFF;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #back-btn:hover {
+            background-color: #0056b3;
+        }
     </style>
-    </head>
+</head>
 
 <body>
-    <a id="back-btn" href="HOME.HTML">← Back to Equipment Diagram</a>
+    <header>
+        <a href="#rmcbasis">RMC BASIC</a>
+        <a href="#maconsmac70">MACONS MAC70</a>
+    </header>
+    <div id="rmcbasis">
+        <a id="back-btn" href="HOME.HTML">← Back to Equipment Diagram</a>
 
-    <h1>RMC Notes</h1>
+        <h1>RMC Notes</h1>
 
-    <div class="section">
-        <h2>Ready Mix Concrete (RMC)</h2>
-        <p><strong>Definition:</strong> Ready Mix Concrete (RMC) plant is a facility where concrete is produced in a
-            controlled environment by mixing cement, aggregates, water, and admixtures, and then delivered to
-            construction sites in a ready-to-use form.</p>
+        <div class="section">
+            <h2>Ready Mix Concrete (RMC)</h2>
+            <p><strong>Definition:</strong> Ready Mix Concrete (RMC) plant is a facility where concrete is produced in a
+                controlled environment by mixing cement, aggregates, water, and admixtures, and then delivered to
+                construction sites in a ready-to-use form.</p>
 
-        <h3>Types of Mixers Used in RMC</h3>
-        <ul>
-            <li><strong>Pan Mixer:</strong> A mixer using stationary pan with rotating blades, used for uniform mixing.
-                Preferred for precast concrete production.</li>
-            <li><strong>Twin Shaft Mixer:</strong> A fast, robust, and homogeneous mixing system.</li>
-            <li><strong>Drum Mixer</strong></li>
-        </ul>
+            <h3>Types of Mixers Used in RMC</h3>
+            <ul>
+                <li><strong>Pan Mixer:</strong> A mixer using stationary pan with rotating blades, used for uniform
+                    mixing.
+                    Preferred for precast concrete production.</li>
+                <li><strong>Twin Shaft Mixer:</strong> A fast, robust, and homogeneous mixing system.</li>
+                <li><strong>Drum Mixer</strong></li>
+            </ul>
 
-        <h3>Difference Between Twin Shaft Mixer and Pan Mixer</h3>
-        <ul>
-            <li><strong>Twin Shaft Mixer:</strong>
+            <h3>Difference Between Twin Shaft Mixer and Pan Mixer</h3>
+            <ul>
+                <li><strong>Twin Shaft Mixer:</strong>
+                    <ul>
+                        <li>Uses two horizontal shafts with synchronised blades that rotate in opposite directions.</li>
+                        <li>Efficient for high-volume concrete mixing.</li>
+                        <li>Two interlocked shafts ensure faster mixing.</li>
+                        <li>More moving parts; requires higher maintenance.</li>
+                    </ul>
+                </li>
+                <li><strong>Pan Mixer:</strong>
+                    <ul>
+                        <li>Features a stationary concrete pan with rotating blades inside.</li>
+                        <li>Suitable for smaller production capacities.</li>
+                        <li>Simpler and easier maintenance.</li>
+                    </ul>
+                </li>
+                <li>Both mixers are effective, but twin shaft mixers are chosen for speed, volume, and energy
+                    efficiency.
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="section">
+            <h2>CCB (Circuit Breakers)</h2>
+            <p><strong>CCB (Circuit Breaker):</strong> A protective electrical device that interrupts current flow in
+                the
+                event of an overload or short circuit, preventing damage to connected equipment and electrical fires.
+            </p>
+
+            <h3>Types</h3>
+            <ul>
+                <li><strong>MCCB (Moulded Case Circuit Breaker):</strong> Provides protection against overload and
+                    short-circuit faults. Does not offer protection against earth leakage currents.</li>
+                <li><strong>RCCB (Residual Current Circuit Breaker):</strong> Detects leakage currents and disconnects
+                    the
+                    circuit to prevent electric shocks.</li>
+                <li><strong>ELCB (Earth Leakage Circuit Breaker):</strong> An older type of device that detects leakage
+                    current from the system and disconnects supply to prevent electric shocks and fire hazards.</li>
+                <li><strong>RLP (Residual Leakage Protector):</strong> Provides safety from residual leakage by
+                    automatically disconnecting the circuit.</li>
+                <li><strong>MPCB (Motor Protection Circuit Breaker):</strong> Protects electric motors from overloads
+                    and
+                    short circuits, automatically switching off faulty connections.</li>
+            </ul>
+        </div>
+    </div>
+    <div id="maconsmac70">
+
+        <div class="section">
+            <h2>Batching Plant – MACONS / MAC 70</h2>
+
+            <h3>RMC Plant Layout Includes:</h3>
+            <ul>
+                <li>1) Weighing Conveyor</li>
+                <li>2) Elevating Conveyor</li>
+            </ul>
+
+            <h3>Weighing Conveyor</h3>
+            <ul>
+                <li>Weighs raw materials and transfers them to the elevator conveyor.</li>
+                <li>Dimensions: 800mm × 4 (PLY) x 26 mtr</li>
+            </ul>
+
+            <h3>Elevating Conveyor</h3>
+            <ul>
+                <li>Transfers collected aggregates & sand to mixer.</li>
+                <li>Dimensions:Endless belt 800mm × 3ply x 43.25 mtr</li>
+            </ul>
+
+            <h3>Motors</h3>
+            <ul>
+                <li>Motor (Weighing Conveyor): 30 HP</li>
+                <li>Motor (Elevating Conveyor): 30 HP</li>
+                <li>Motor (Screw Conveyor): 15 HP</li>
+            </ul>
+
+            <h3>General Data</h3>
+            <ul>
+                <li>mixer capacity : 70 m³</li>
+                <li>60 HP motor operate both twin shaft mixer</li>
+                <li>Screw conveyor dia: 219 mm</li>
+                <li>1 Time Loading Capacity: 7 m³</li>
+
+            </ul>
+
+            <h3>Load Cells</h3>
+            <ul>
+                <li>Aggregates Load Cell: 6 Nos × 2.5 Ton each</li>
+                <li>Cement Load Cell: 4 Nos × 550 kg each</li>
+                <li>Water Load Cell: 3 No × 550 kg each</li>
+                <li>Add mixer Load Cell: 1 No × 1 Yon</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Types of Ready Mix Concrete (RMC)</h2>
+            <ul>
+                <li>1) Transit Mixed Concrete</li>
+                <li>2) Shrink Mixed Concrete</li>
+                <li>3) Central Mixed Concrete</li>
+            </ul>
+
+            <p><strong>Note:</strong> Cement used in RMC is Portland cement.</p>
+            <p><strong>RMC Mix Components:</strong> Cement + Water + Aggregates</p>
+            <p><strong>Size of Aggregates:</strong> 10 mm & 20 mm</p>
+        </div>
+    </div>
+    <div id="">
+        <section id="plant">
+            <h2>1. RMC Schwing Stetter M1C – Plant Basic Details</h2>
+            <ul>
+                <li>Concrete Output Capacity: approx. <b>60 m³/hr</b></li>
+                <li>Motor Fitted: <b>37 kW (49.6 HP)</b></li>
+                <li>Wearing Plate: <b>6 nos</b></li>
+                <li>Sidewall Wear Sheet (10 mm): <b>2 nos</b></li>
+                <li>Scrapper: <b>4 nos</b></li>
+            </ul>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section id="mixing">
+            <h2>2. Mixing Arm & Internal Components</h2>
+            <ul>
+                <li>Mixing Arms: <b>6 nos</b></li>
+                <li>Double Horn Shovel: <b>6 nos</b>, life: <b>4,000–5,000 m³</b></li>
+                <li>Bottom Plates (TILES): <b>24 nos</b> , life: <b>30,000–40,000 m³</b></li>
+                <li>Wear Plates (Total): <b>02 nos</b></li>
+                <br>
+                <b>Bottom Plate Distribution:</b>
                 <ul>
-                    <li>Uses two horizontal shafts with synchronised blades that rotate in opposite directions.</li>
-                    <li>Efficient for high-volume concrete mixing.</li>
-                    <li>Two interlocked shafts ensure faster mixing.</li>
-                    <li>More moving parts; requires higher maintenance.</li>
+                    <li>Inner – 7 nos</li>
+                    <li>Outer – 15 nos</li>
+                    <li>Gate – 2 nos</li>
                 </ul>
-            </li>
-            <li><strong>Pan Mixer:</strong>
-                <ul>
-                    <li>Features a stationary concrete pan with rotating blades inside.</li>
-                    <li>Suitable for smaller production capacities.</li>
-                    <li>Simpler and easier maintenance.</li>
-                </ul>
-            </li>
-            <li>Both mixers are effective, but twin shaft mixers are chosen for speed, volume, and energy efficiency.
-            </li>
-        </ul>
+            </ul>
+
+            <h3>Side Wall</h3>
+            <ul>
+                <li>Side wall: <b>2 nos</b> (Right – 1 no, Left – 1 no)</li>
+            </ul>
+
+            <h3>Engine Oil</h3>
+            <ul>
+                <li>20W40 – 34 L</li>
+            </ul>
+
+            <h3>Software Used</h3>
+            <ul>
+                <li><b>MCI360</b></li>
+            </ul>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section id="loadcells">
+            <h2>3. Load Cell Details</h2>
+            <ul>
+                <li>Aggregate Load Cell – <strong> 3 nos, 1 ton each</strong></li>
+                <li>Cement Weighing Load Cell – <strong> 3 nos, 500 kg each</strong></li>
+                <li>Water Weighing Load Cell – <strong> 1 no, 300 kg</strong></li>
+                <li>Admixture Weighing Load Cell – <strong> 1 no, 50 kg</strong></li>
+            </ul>
+        </section>
+
+        <!-- SECTION 4 -->
+        <section id="pumpdetails">
+            <h2>4. Pump Details</h2>
+            <ul>
+                <li>Water Pump – <strong> 1 no (3–5 HP)</strong></li>
+                <li>Admixture Pump – <strong> 1 no (0.5–1 HP)</strong></li>
+                <li>Hydraulic Pump – <strong> 1 no (2 HP)</strong></li>
+                <li>Mixer Cleaning Pump –<strong> 1 no (2–3 HP)</strong></li>
+            </ul>
+        </section>
+
+        <!-- SECTION 5 -->
+        <section id="skip">
+            <h2>5. Skip Wire Details</h2>
+            <ul>
+                <li>Length –<strong> 22 meter</strong></li>
+                <li>Thickness –<strong> 16 mm</strong></li>
+                <li>Life –<strong> 18,000 to 22,000 m³</strong></li>
+            </ul>
+        </section>
+
+        <!-- SECTION 6 -->
+        <section id="motors">
+            <h2>6. Total Motors Used in Plant</h2>
+            <ul>
+                <li>Mixer Motor –<strong> 45 HP</strong></li>
+                <li>Belt Conveyor Motor –<strong> 7.5 HP (5.5 kW)</strong></li>
+                <li>Skip Hoist Motor –<strong> 1 no (15–20 HP)</strong></li>
+                <li>Cement Screw Conveyor Motor –<strong> 1 no (7.5–10 HP)</strong></li>
+                <li>Water Pump Motor –<strong> 1 No (3–5 HP)</strong></li>
+                <li>Admixture Pump Motor –<strong> 2 No (0.5–1 HP)</strong></li>
+                <li>HP Cleaning Motor –<strong> 1 No (2–3 HP)</strong></li>
+                <li>Hydraulic Power Pack Motor –<strong> 1 No (2 HP)</strong></li>
+                <li>Belt Size –<strong> 650 mm, 4 ply × 12 m</strong></li>
+            </ul>
+        </section>
+
+        <!-- SECTION 7 -->
+        <section id="daily">
+            <h2>7. Daily Maintenance Checklist</h2>
+            <ul>
+                <li>Pan mixer – check wear plates, mixing arms, blades</li>
+                <li>Discharge gate – check cylinder operation</li>
+                <li>Load cells – check for zero error</li>
+                <li>Belt conveyor – inspect tension & alignment</li>
+                <li>Skip bucket – check wire rope condition</li>
+                <li>Water pump – check pressure & leakage</li>
+                <li>Air compressor – drain moisture</li>
+                <li>Lubrication – grease all nipples</li>
+                <li>Aggregate bins – check material overflow & jamming</li>
+                <li>Pneumatic line – check air leakage</li>
+                <li>General cleaning – remove concrete deposits</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 8 -->
+        <section id="weekly">
+            <h2>8. Weekly Maintenance Checklist</h2>
+            <ul>
+                <li>Mixer – check gearbox oil level</li>
+                <li>Mixing arms & blades – torque check bolts</li>
+                <li>Belt conveyor – check bearings & rollers</li>
+                <li>Skip winch – check drum, rope pulleys, grease</li>
+                <li>Skip rope – inspect complete rope</li>
+                <li>Load cells – check calibration deviation</li>
+                <li>Air compressor – check oil level</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 9 -->
+        <section id="monthly">
+            <h2>9. Monthly Maintenance Checklist</h2>
+            <ul>
+                <li>Mixer gear box – oil change</li>
+                <li>Inspect wear plates</li>
+                <li>Skip rope – health inspection</li>
+                <li>Belt conveyor – check tightness and greasing</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 10 -->
+        <section id="connectedload">
+            <h2>10. Connected Electrical Load</h2>
+
+            <ul>
+                <li>Pan Mixer Motor – 40 HP (30 kW)</li>
+                <li>Skip Motor – 15 HP (11 kW)</li>
+                <li>Belt Conveyor Motor – 7.5 HP (5.5 kW)</li>
+                <li>Screw Conveyor Motor – 7.5 HP (5.5 kW)</li>
+                <li>Water Pump – 2 HP (1.5 kW)</li>
+                <li>Admixture Pump (2 nos) – 0.5 HP each</li>
+                <li>Air Compressor – 5 HP (3.7 kW)</li>
+                <li>Vibrators (2 nos) – 0.5 HP each</li>
+                <li>Control Panel + PLC + Sensors – 1.5–2 kW</li>
+            </ul>
+
+            <h3>Total Connected Load</h3>
+            <p><b>60–65 kW</b></p>
+
+            <h3>Generator Requirement</h3>
+            <p>
+                DG must be 25–30% higher than connected load. <br>
+                Recommended DG Set: <b>82.5 kVA</b> (≈66 kW output)
+            </p>
+        </section>
     </div>
-
-    <div class="section">
-        <h2>CCB (Circuit Breakers)</h2>
-        <p><strong>CCB (Circuit Breaker):</strong> A protective electrical device that interrupts current flow in the
-            event of an overload or short circuit, preventing damage to connected equipment and electrical fires.</p>
-
-        <h3>Types</h3>
-        <ul>
-            <li><strong>MCCB (Moulded Case Circuit Breaker):</strong> Provides protection against overload and
-                short-circuit faults. Does not offer protection against earth leakage currents.</li>
-            <li><strong>RCCB (Residual Current Circuit Breaker):</strong> Detects leakage currents and disconnects the
-                circuit to prevent electric shocks.</li>
-            <li><strong>ELCB (Earth Leakage Circuit Breaker):</strong> An older type of device that detects leakage
-                current from the system and disconnects supply to prevent electric shocks and fire hazards.</li>
-            <li><strong>RLP (Residual Leakage Protector):</strong> Provides safety from residual leakage by
-                automatically disconnecting the circuit.</li>
-            <li><strong>MPCB (Motor Protection Circuit Breaker):</strong> Protects electric motors from overloads and
-                short circuits, automatically switching off faulty connections.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Batching Plant – MACONS / MAC 70</h2>
-
-        <h3>RMC Plant Layout Includes:</h3>
-        <ul>
-            <li>1) Weighing Conveyor</li>
-            <li>2) Elevating Conveyor</li>
-        </ul>
-
-        <h3>Weighing Conveyor</h3>
-        <ul>
-            <li>Weighs raw materials and transfers them to the elevator conveyor.</li>
-            <li>Dimensions: 800mm × 4 (PLY) x 26 mtr</li>
-        </ul>
-
-        <h3>Elevating Conveyor</h3>
-        <ul>
-            <li>Transfers collected aggregates & sand to mixer.</li>
-            <li>Dimensions:Endless belt 800mm × 3ply x 43.25 mtr</li>
-        </ul>
-
-        <h3>Motors</h3>
-        <ul>
-            <li>Motor (Weighing Conveyor): 30 HP</li>
-            <li>Motor (Elevating Conveyor): 30 HP</li>
-            <li>Motor (Screw Conveyor): 15 HP</li>
-        </ul>
-
-        <h3>General Data</h3>
-        <ul>
-            <li>mixer capacity : 70 m³</li>
-            <li>60 HP motor operate both twin shaft mixer</li>
-            <li>Screw conveyor dia: 219 mm</li>
-            <li>1 Time Loading Capacity: 7 m³</li>
-            
-        </ul>
-
-        <h3>Load Cells</h3>
-        <ul>
-            <li>Aggregates Load Cell: 6 Nos × 2.5 Ton each</li>
-            <li>Cement Load Cell: 4 Nos × 550 kg each</li>
-            <li>Water Load Cell: 3 No ×  550 kg each</li>
-            <li>Add mixer Load Cell: 1 No × 1 Yon</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Types of Ready Mix Concrete (RMC)</h2>
-        <ul>
-            <li>1) Transit Mixed Concrete</li>
-            <li>2) Shrink Mixed Concrete</li>
-            <li>3) Central Mixed Concrete</li>
-        </ul>
-
-        <p><strong>Note:</strong> Cement used in RMC is Portland cement.</p>
-        <p><strong>RMC Mix Components:</strong> Cement + Water + Aggregates</p>
-        <p><strong>Size of Aggregates:</strong> 10 mm & 20 mm</p>
-    </div>
-
 </body>
 
 </html>
